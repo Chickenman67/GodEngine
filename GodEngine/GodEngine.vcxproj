@@ -179,6 +179,8 @@
     <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="..\src\GodEngine\Window.h" />
     <ClInclude Include="..\src\gepch.h" />
+    <ClInclude Include="KeyCodes.h" />
+    <ClInclude Include="MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\GodEngine\Application.cpp" />

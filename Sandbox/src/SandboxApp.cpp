@@ -8,11 +8,18 @@ public:
 	{}
 
 	void OnUpdate() override {
-		GE_INFO("ExampleLayer::Update");
+		//GE_INFO("ExampleLayer::Update");
+
+		if (GodEngine::Input::IsKeyPressed(GE_KEY_TAB))
+			GE_INFO("Tab key is pressed");
 }
 	void OnEvent(GodEngine::Event& event) override
 	{
-		GE_TRACE("{0}", event);
+		if (event.GetEventType() == GodEngine::EventType::KeyPressed) {
+			GodEngine::KeyPressedEvent& e = (GodEngine::KeyPressedEvent&)event;
+			GE_TRACE("{0}", (char)e.GetKeyCode());
+		}
+		
 	}
 };
 

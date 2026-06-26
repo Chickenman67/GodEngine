@@ -87,6 +87,12 @@
     <ClInclude Include="..\src\gepch.h">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="KeyCodes.h">
+      <Filter>src\GodEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseButtonCodes.h">
+      <Filter>src\GodEngine</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\GodEngine\Application.cpp">

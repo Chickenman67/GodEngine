@@ -20,6 +20,7 @@ class Sandbox : public GodEngine::Application {
 public:
 	Sandbox() {
 		PushLayer(new ExampleLayer());
+		PushOverLay(new GodEngine::ImGuiLayer());
 	}
 	~Sandbox() {
 

@@ -13,9 +13,11 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 IncludeDir = {}
 IncludeDir["GLFW"] = "GodEngine/vendor/GLFW/include"
 IncludeDir["Glad"] = "GodEngine/vendor/glad/include"
+IncludeDir["ImGui"] = "GodEngine/vendor/imgui"
 
 include "GodEngine/vendor/GLFW"
 include "GodEngine/vendor/glad" 
+include "GodEngine/vendor/imgui"
 
 project "GodEngine"
     location "GodEngine"
@@ -40,12 +42,14 @@ project "GodEngine"
         "src",
         "%{prj.name}/vendor/spdlog/include",
         "%{IncludeDir.GLFW}",
-        "%{IncludeDir.Glad}"
+        "%{IncludeDir.Glad}",
+        "%{IncludeDir.ImGui}"
     }
 
     links{
         "GLFW",
         "GLAD",
+        "ImGui",
         "opengl32.lib"
     }
 
@@ -57,7 +61,7 @@ project "GodEngine"
         defines
         {
             "GE_PLATFORM_WINDOWS",
-            "GE_BUILD_DLL"
+            "GE_BUILD_DLL",
             "GLFW_INCLUDE_NONE"
         }
 

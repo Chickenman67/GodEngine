@@ -170,10 +170,12 @@
     <ClInclude Include="..\src\GodEngine\Events\KeyEvent.h" />
     <ClInclude Include="..\src\GodEngine\Events\MouseEvent.h" />
     <ClInclude Include="..\src\GodEngine\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="..\src\GodEngine\Input.h" />
     <ClInclude Include="..\src\GodEngine\Layer.h" />
     <ClInclude Include="..\src\GodEngine\LayerStack.h" />
     <ClInclude Include="..\src\GodEngine\Log.h" />
     <ClInclude Include="..\src\GodEngine\Platform\OpenGL\imgui_impl_opengl3.h" />
+    <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsInput.h" />
     <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsWindow.h" />
     <ClInclude Include="..\src\GodEngine\Window.h" />
     <ClInclude Include="..\src\gepch.h" />
@@ -185,6 +187,7 @@
     <ClCompile Include="..\src\GodEngine\LayerStack.cpp" />
     <ClCompile Include="..\src\GodEngine\Log.cpp" />
     <ClCompile Include="..\src\GodEngine\Platform\OpenGL\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsWindow.cpp" />
     <ClCompile Include="..\src\gepch.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>

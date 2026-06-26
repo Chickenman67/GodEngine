@@ -60,6 +60,9 @@
     <ClInclude Include="..\src\GodEngine\ImGui\ImGuiLayer.h">
       <Filter>src\GodEngine\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Input.h">
+      <Filter>src\GodEngine</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\GodEngine\Layer.h">
       <Filter>src\GodEngine</Filter>
     </ClInclude>
@@ -71,6 +74,9 @@
     </ClInclude>
     <ClInclude Include="..\src\GodEngine\Platform\OpenGL\imgui_impl_opengl3.h">
       <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsInput.h">
+      <Filter>src\GodEngine\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsWindow.h">
       <Filter>src\GodEngine\Platform\Windows</Filter>
@@ -100,6 +106,9 @@
     </ClCompile>
     <ClCompile Include="..\src\GodEngine\Platform\OpenGL\imgui_impl_opengl3.cpp">
       <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsInput.cpp">
+      <Filter>src\GodEngine\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\GodEngine\Platform\Windows</Filter>

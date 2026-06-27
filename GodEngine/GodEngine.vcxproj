@@ -604,6 +604,7 @@
   <ItemGroup>
     <ClCompile Include="..\src\GodEngine\Application.cpp" />
     <ClCompile Include="..\src\GodEngine\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="..\src\GodEngine\ImGuiBuild.cpp" />
     <ClCompile Include="..\src\GodEngine\Layer.cpp" />
     <ClCompile Include="..\src\GodEngine\LayerStack.cpp" />
     <ClCompile Include="..\src\GodEngine\Log.cpp" />

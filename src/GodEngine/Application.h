@@ -5,6 +5,7 @@
 #include "LayerStack.h"
 #include "Events/ApplicationEvent.h"
 #include "Window.h"
+#include "GodEngine/ImGui/ImGuiLayer.h"
 
 #ifdef _MSC_VER
 #pragma warning(push)
@@ -29,6 +30,7 @@ namespace GodEngine {
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
 		std::unique_ptr<Window> m_Window;
+		ImGuiLayer* m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

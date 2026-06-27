@@ -1376,6 +1376,9 @@
     <ClCompile Include="..\src\GodEngine\ImGui\ImGuiLayer.cpp">
       <Filter>src\GodEngine\ImGui</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\GodEngine\ImGuiBuild.cpp">
+      <Filter>src\GodEngine</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\GodEngine\Layer.cpp">
       <Filter>src\GodEngine</Filter>
     </ClCompile>

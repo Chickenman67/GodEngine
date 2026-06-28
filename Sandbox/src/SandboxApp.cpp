@@ -1,6 +1,6 @@
 #include "gepch.h"
 #include "GodEngine.h"
-
+#include "imgui/imgui.h"
 
 
 class ExampleLayer : public GodEngine::Layer {
@@ -15,6 +15,13 @@ public:
 		if (GodEngine::Input::IsKeyPressed(GE_KEY_TAB))
 			GE_INFO("Tab key is pressed");
 }
+
+	virtual void OnImGuiRender() override {
+		ImGui::Begin("Test");
+		ImGui::Text("Heelo world");
+		
+		ImGui::End();
+	}
 	void OnEvent(GodEngine::Event& event) override
 	{
 		if (event.GetEventType() == GodEngine::EventType::KeyPressed) {

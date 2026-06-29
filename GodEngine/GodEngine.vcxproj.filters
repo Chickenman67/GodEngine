@@ -16,8 +16,14 @@
     <Filter Include="src\GodEngine\Platform">
       <UniqueIdentifier>{A0D174CB-8CCB-9D1D-7538-342E61D1038A}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\GodEngine\Platform\OpenGL">
+      <UniqueIdentifier>{D466412B-407F-2855-092C-B8EE7503BDEE}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\GodEngine\Platform\Windows">
       <UniqueIdentifier>{DA1B8AEB-C641-5452-AF87-D91D9B4C791E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\GodEngine\Renderer">
+      <UniqueIdentifier>{F2D851A6-DED2-7AF8-C73F-1109B3D8E064}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
@@ -93,11 +99,20 @@
     <ClInclude Include="..\src\GodEngine\MouseButtonCodes.h">
       <Filter>src\GodEngine</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Platform\OpenGL\OpenGLContext.h">
+      <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsInput.h">
       <Filter>src\GodEngine\Platform\Windows</Filter>
     </ClInclude>
     <ClInclude Include="..\src\GodEngine\Platform\Windows\WindowsWindow.h">
       <Filter>src\GodEngine\Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Renderer\GraphicsContext.h">
+      <Filter>src\GodEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Renderer\shader.h">
+      <Filter>src\GodEngine\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="..\src\GodEngine\Window.h">
       <Filter>src\GodEngine</Filter>
@@ -1362,12 +1377,6 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\GodEngine\Renderer\GraphicsContext.h">
-      <Filter>src\GodEngine</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\GodEngine\Platform\OpenGL\OpenGLContext.h">
-      <Filter>src\GodEngine</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\GodEngine\Application.cpp">
@@ -1388,20 +1397,23 @@
     <ClCompile Include="..\src\GodEngine\Log.cpp">
       <Filter>src\GodEngine</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Platform\OpenGL\OpenGLContext.cpp">
+      <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsInput.cpp">
       <Filter>src\GodEngine\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="..\src\GodEngine\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\GodEngine\Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Renderer\shader.cpp">
+      <Filter>src\GodEngine\Renderer</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\gepch.cpp">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="vendor\glad\src\glad.c">
       <Filter>vendor\glad\src</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\GodEngine\Platform\OpenGL\OpenGLContext.cpp">
-      <Filter>src\GodEngine</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

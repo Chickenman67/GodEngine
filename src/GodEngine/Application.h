@@ -6,6 +6,7 @@
 #include "Events/ApplicationEvent.h"
 #include "Window.h"
 #include "GodEngine/ImGui/ImGuiLayer.h"
+#include "GodEngine/Renderer/shader.h"
 
 #ifdef _MSC_VER
 #pragma warning(push)
@@ -35,6 +36,7 @@ namespace GodEngine {
 		LayerStack m_LayerStack;
 
 		unsigned int m_VertexArray, m_VertexBuffer, m_IndexBuffer;
+		std::unique_ptr<shader> m_Shader;
 	private:
 		static Application* s_Instance;
 	};

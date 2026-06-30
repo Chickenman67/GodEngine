@@ -1377,6 +1377,15 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp">
       <Filter>vendor\glm\glm</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Renderer\Buffer.h">
+      <Filter>src\GodEngine\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Platform\OpenGL\OpenGLBuffer.h">
+      <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GodEngine\Renderer\Renderer.h">
+      <Filter>src\GodEngine\Renderer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\GodEngine\Application.cpp">
@@ -1414,6 +1423,15 @@
     </ClCompile>
     <ClCompile Include="vendor\glad\src\glad.c">
       <Filter>vendor\glad\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Renderer\Buffer.cpp">
+      <Filter>src\GodEngine\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Platform\OpenGL\OpenGLBuffer.cpp">
+      <Filter>src\GodEngine\Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GodEngine\Renderer\Renderer.cpp">
+      <Filter>src\GodEngine\Renderer</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
